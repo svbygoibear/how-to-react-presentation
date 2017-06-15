@@ -11,11 +11,9 @@ module.exports = function(grunt) {
 		meta: {
 			banner:
 				'/*!\n' +
-				' * reveal.js <%= pkg.version %> (<%= grunt.template.today("yyyy-mm-dd, HH:MM") %>)\n' +
-				' * http://lab.hakim.se/reveal-js\n' +
+				' * how-to-react-presentation <%= pkg.version %> (<%= grunt.template.today("yyyy-mm-dd, HH:MM") %>)\n' +
 				' * MIT licensed\n' +
 				' *\n' +
-				' * Copyright (C) 2017 Hakim El Hattab, http://hakim.se\n' +
 				' */'
 		},
 

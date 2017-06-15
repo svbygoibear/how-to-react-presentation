@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>how-to-react-presentation</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,102 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!--Intro Slide-->
+				<section>
+					<h1>How to React?</h1>
+					<p>From excitement, to despair and finally acceptance... How should you deal with react.js?</p>
+					<p>
+						<small>Created by Simone van Buuren</small>
+					</p>
+				</section>
+
+				<!--Contents-->
+				<section>
+					<h2>Wut? A R-E-A-C-T[.js]?</h2>
+					<h4>We're covering:</h4>
+					<p class="fragment">
+						<ul>
+							<li>What is react.js?</li>
+							<li>What makes up react.js?</li>
+							<li>Things I wish I knew before starting with react.js.</li>
+							<li>How to handle state with redux.</li>
+							<li>Tools that I think work well with react.js + redux.</li>
+							<li>Some useful guides on the internet.</li>
+							<li>Caring for your commit history.</li>
+						</ul>
+					</p>
+				</section>
+
+				<!--What is react.js-->
+				<section>
+					<!--What is react.js: Title-->
+					<section>
+						<h2>What is react.js?</h2>
+					</section>
+
+					<!--What is react.js: Description-->
+					<section>
+						<p>It isn't some fancy framework - it is actually just a simple library with some useful patterns you can follow. What it is NOT is;</p>
+						<p class="fragment">
+						<ul>
+							<li>another MVC framework,</li>
+							<li>an all in one solution,</li>
+							<li>a direct alternative for something like Angular,</li>
+							<li>a dumping ground for business logic,</li>
+							<li>or some magical all round solution.</li>
+						</ul>
+						</p>
+						<aside class="notes">
+							If anything, it merely gives you the 'V', or view part, of MVC. Its up to you to find something that will handle the 'M' & 'C'.
+						</aside>
+					</section>
+
+					<!--What is react.js: Joke + gif here-->
+					<section>
+						<p>TODO: joke + gif here</p>
+					</section>
+				</section>
+
+				<!--What makes up react.js-->
+				<section>
+					<!--What makes up react.js: Title-->
+					<section>
+						<h2>What makes up react.js?</h2>
+					</section>
+
+					<!--What makes up react.js: Description + Components-->
+					<section>
+						<p>React.js is made up out of components - and components are quite literally things you'd like to render. React then updates and render or re-render components when data changes.</p>
+						<p>You can split up your component types (I usually do) into some of the following:</p>
+						<p class="fragment">
+							<ul>
+								<li><b>components</b>: These are bare bones components, usually pure and stateless without any business logic.</li>
+							</ul>
+						</p>
+						<aside class="notes">
+							But that's just me - you can add everything under components or remove views and add everything with more than one component
+							under a container. That's up to you. Just remember to pick a standard and keep with it.
+						</aside>
+					</section>
+
+					<!--What makes up react.js: Description + Containers-->
+					<section>
+						<p class="fragment">
+						<ul>
+							<li><b>containers</b>: These are collections of 1 or more components used to make something else.</li>
+						</ul>
+						</p>
+					</section>
+
+					<!--What makes up react.js: Description + Views-->
+					<section>
+						<p class="fragment">
+						<ul>
+							<li><b>views</b>: Think of this as a literal page - a complete rendered view.</li>
+						</ul>
+						</p>
+					</section>
+				</section>
 			</div>
 		</div>
 

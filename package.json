@@ -1,23 +1,19 @@
 {
-  "name": "reveal.js",
-  "version": "3.5.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
-  "subdomain": "revealjs",
-  "main": "js/reveal.js",
+  "name": "how-to-react-presentation",
+  "version": "0.1.0",
+  "description": "A presentation on react, using reveal.js",
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
     "build": "grunt"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Simone van Buuren",
+    "email": "svbyogibear@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/svbygoibear/how-to-react-presentation.git"
   },
   "engines": {
     "node": ">=4.0.0"

@@ -1,22 +1,21 @@
 {
-  "name": "reveal.js",
-  "version": "3.5.0",
+  "name": "how-to-react-presentation",
+  "version": "0.1.0",
   "main": [
     "js/reveal.js",
     "css/reveal.css"
   ],
-  "homepage": "http://lab.hakim.se/reveal-js/",
   "license": "MIT",
-  "description": "The HTML Presentation Framework",
+  "description": "Presentation on React using reveal.js",
   "authors": [
-    "Hakim El Hattab <hakim.elhattab@gmail.com>"
+    "Simone van Buuren <svbyogibear@gmail.com>"
   ],
   "dependencies": {
     "headjs": "~1.0.3"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/svbygoibear/how-to-react-presentation.git"
   },
   "ignore": [
     "**/.*",
