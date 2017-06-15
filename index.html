@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>how-to-react-presentation</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,239 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!--Intro Slide-->
+				<section>
+					<h1>How to React?</h1>
+					<p>From excitement, to despair and finally acceptance... How should you deal with react.js?</p>
+					<p>
+						<small>Created by Simone van Buuren</small>
+					</p>
+				</section>
+
+				<!--Contents-->
+				<section>
+					<h2>Wut? A R-E-A-C-T[.js]?</h2>
+					<h4>We're covering:</h4>
+					<p class="fragment">
+						<ul>
+							<li>What is react.js?</li>
+							<li>What makes up react.js?</li>
+							<li>Things I wish I knew before starting with react.js.</li>
+						</ul>
+					</p>
+				</section>
+
+				<!--What is react.js-->
+				<section>
+					<!--What is react.js: Title-->
+					<section>
+						<h2>What is react.js?</h2>
+					</section>
+
+					<!--What is react.js: Description-->
+					<section>
+						<p>It isn't some fancy framework - it is actually just a simple library with some useful patterns you can follow. What it is NOT is;</p>
+						<p class="fragment">
+						<ul>
+							<li>another MVC framework,</li>
+							<li>an all in one solution,</li>
+							<li>a direct alternative for something like Angular,</li>
+							<li>a dumping ground for business logic,</li>
+							<li>or some magical all round solution.</li>
+						</ul>
+						</p>
+						<aside class="notes">
+							If anything, it merely gives you the 'V', or view part, of MVC. Its up to you to find something that will handle the 'M' & 'C'.
+						</aside>
+					</section>
+				</section>
+
+				<!--What makes up react.js-->
+				<section>
+					<!--What makes up react.js: Title-->
+					<section>
+						<h2>What makes up react.js?</h2>
+					</section>
+
+					<!--What makes up react.js: Description-->
+					<section>
+						<p>React.js is made up out of components - and components are quite literally things you'd like to render. React then updates and render or re-render components when data changes.</p>
+					</section>
+
+                    <!--What makes up react.js: Components-->
+                    <section>
+                        <p>You can split up your component types (I usually do) into some of the following:</p>
+                        <p class="fragment">
+                        <ul>
+                            <li>
+                                <b>components</b>: These are bare bones components, usually pure and stateless without any business logic. Do not focus
+                                on the look of the component - this is about function and use.
+                            </li>
+                        </ul>
+                        </p>
+                        <aside class="notes">
+                            But that's just me - you can add everything under components or remove views and add everything with more than one component
+                            under a container. That's up to you. Just remember to pick a standard and keep with it.
+                        </aside>
+                    </section>
+
+					<!--What makes up react.js: Description + Containers-->
+					<section>
+						<p class="fragment">
+						<ul>
+							<li>
+                                <b>containers</b>: These are collections of 1 or more components used to make something else.
+                                This could be forms, collections of inputs and buttons - something that isn't a complete page,
+                                but functionality wise can be separate from the page yet is made up from various components.
+                            </li>
+						</ul>
+						</p>
+					</section>
+
+					<!--What makes up react.js: Description + Views-->
+					<section>
+						<p class="fragment">
+						<ul>
+							<li>
+                                <b>views</b>: Think of this as a literal page - a complete rendered view. This consists of
+                                containers and components alike, just like containers and components there should not be any
+                                business logic (only render logic) in a view.
+                            </li>
+						</ul>
+						</p>
+					</section>
+				</section>
+
+                <!--Things I wish I knew before starting with react.js-->
+                <section>
+                    <!--Things I wish I knew before starting with react.js: Title-->
+                    <section>
+                        <h2>Things I wish I knew before starting with react.js</h2>
+						<p>Disclaimer; this might be a long section...</p>
+                    </section>
+
+					<!--Things I wish I knew before starting with react.js: JSX-->
+					<section>
+						<h4>Make friends with JSX</h4>
+						<p>
+							You're going to be using some JSX syntax - but don't look at JSX from the JSX website, rather
+							have a look over at Facebook. It isn't really important functionally - but it does add some syntactic sugar.
+						</p>
+						<aside class="notes">
+							Here's that link: https://facebook.github.io/react/docs/jsx-in-depth.html
+						</aside>
+					</section>
+
+					<!--Things I wish I knew before starting with react.js: Components-->
+					<section>
+						<h4>Make small, functional focused components</h4>
+						<p>
+							Do not over-engineer and try to make a component out of everything, but if something does have its own
+							behaviour and it makes sense to abstract it - make the component small and compact. This makes it easy to
+							maintain, test and even extend on.
+						</p>
+					</section>
+
+					<!--Things I wish I knew before starting with react.js: React.Component-->
+					<section>
+						<h4>Using React.Component</h4>
+						<p>
+							This syntax for declaring a Component is most commonly used when you're making use of the various
+							react.js life-cycles.
+						</p>
+						<p>
+							<pre>
+								<code data-trim>
+								class YourComponent extends React.Component {
+									render() return { some div element here };
+								}
+								</code>
+							</pre>
+						</p>
+					</section>
+
+					<!--Things I wish I knew before starting with react.js: const MyComponent = props =>-->
+					<section>
+						<h4>Using const YourComponent = props =></h4>
+						<p>
+							If you're not making use of any life-cycles, you can declare it as a function for a simpler syntax.
+							This usually also indicates that your component will be stateless (no state - no need for life-cycles).
+						</p>
+						<p>
+							<pre>
+								<code data-trim>
+								const YourComponent = props => {
+									return({ some div element here });
+								};
+								</code>
+							</pre>
+						</p>
+					</section>
+
+					<!--Things I wish I knew before starting with react.js: Pure Component-->
+					<section>
+						<h4>Components VS Pure Components</h4>
+						<p>
+							Pure Components are similar to regular Components - with the exception that it implements the
+							shouldComponentUpdate() lifecycle method with a shallow prop and state comparison. Thus if you're
+							creating a Component which does not make use of state - it is more efficient to declare it as a Pure Component.
+							You do have the option to declare it as a function, per the previous slide, but according to the React.js
+							documentation, it is more efficient to declare it as a Pure Component.
+						</p>
+						<aside class="notes">
+							Here's a link for more info on Pure Components: https://facebook.github.io/react/docs/react-api.html#react.purecomponent
+						</aside>
+					</section>
+
+					<!--Things I wish I knew before starting with react.js: ES6-->
+					<section>
+						<h4>Use ES6</h4>
+						<p>
+							It should be obvious from the previous examples - but it might be a good idea to switch over to
+							use ES6 syntax. It gives you the ability to make use of the class declaration syntax for Components,
+							it gives you command over Property Initialisers and even Arrow Functions - just to mention a few.
+						</p>
+						<aside class="notes">
+							Here's a link for more info on ES6: https://babeljs.io/blog/2015/06/07/react-on-es6-plus
+						</aside>
+					</section>
+
+					<!--Things I wish I knew before starting with react.js: Extra Technologies-->
+					<section>
+						<h4>What other stuff do I need?</h4>
+						<p>
+							React.js, JSX, ES6 and Redux.js isn't the only two libraries and technologies you'll need to
+							make all of this work... You'll also have to consider:
+							<ul>
+								<li>
+									<b>Babel</b>: This literally transpiles everything and removes any build time complexities.
+								</li>
+								<li>
+									<b>Webpack</b>: How the hell else will you bundle your code for deploys and testing?
+								</li>
+								<li>
+									<b>NPM</b>: Well since you now have dependencies, why not add a dependency to manage your dependency? (INCEPTION!!!)
+								</li>
+							</ul>
+						</p>
+						<aside class="notes">
+							Babel: https://babeljs.io
+							Webpack: https://webpack.js.org
+							NPM: https://www.npmjs.com
+						</aside>
+					</section>
+                </section>
+
+				<!--Conclusion-->
+				<section>
+					<h2>If you're going react.js...</h2>
+					<p>
+						... consider that you'll need to understand JavaScript VERY well, understand the JS ecosystem and
+						really have at least an intermediate grasp of Object Oriented and Functional Programming to use
+						it with ease. But if you do not - don't fear! There's ton of start kits and sources out there!
+					</p>
+					<h2>The End.</h2>
+				</section>
 			</div>
 		</div>
 
@@ -33,17 +264,24 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
 		</script>
 	</body>
 </html>
