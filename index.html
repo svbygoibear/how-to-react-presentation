@@ -87,26 +87,37 @@
 						<h2>What makes up react.js?</h2>
 					</section>
 
-					<!--What makes up react.js: Description + Components-->
+					<!--What makes up react.js: Description-->
 					<section>
 						<p>React.js is made up out of components - and components are quite literally things you'd like to render. React then updates and render or re-render components when data changes.</p>
-						<p>You can split up your component types (I usually do) into some of the following:</p>
-						<p class="fragment">
-							<ul>
-								<li><b>components</b>: These are bare bones components, usually pure and stateless without any business logic.</li>
-							</ul>
-						</p>
-						<aside class="notes">
-							But that's just me - you can add everything under components or remove views and add everything with more than one component
-							under a container. That's up to you. Just remember to pick a standard and keep with it.
-						</aside>
 					</section>
+
+                    <!--What makes up react.js: Components-->
+                    <section>
+                        <p>You can split up your component types (I usually do) into some of the following:</p>
+                        <p class="fragment">
+                        <ul>
+                            <li>
+                                <b>components</b>: These are bare bones components, usually pure and stateless without any business logic. Do not focus
+                                on the look of the component - this is about function and use.
+                            </li>
+                        </ul>
+                        </p>
+                        <aside class="notes">
+                            But that's just me - you can add everything under components or remove views and add everything with more than one component
+                            under a container. That's up to you. Just remember to pick a standard and keep with it.
+                        </aside>
+                    </section>
 
 					<!--What makes up react.js: Description + Containers-->
 					<section>
 						<p class="fragment">
 						<ul>
-							<li><b>containers</b>: These are collections of 1 or more components used to make something else.</li>
+							<li>
+                                <b>containers</b>: These are collections of 1 or more components used to make something else.
+                                This could be forms, collections of inputs and buttons - something that isn't a complete page,
+                                but functionality wise can be separate from the page yet is made up from various components.
+                            </li>
 						</ul>
 						</p>
 					</section>
@@ -115,11 +126,24 @@
 					<section>
 						<p class="fragment">
 						<ul>
-							<li><b>views</b>: Think of this as a literal page - a complete rendered view.</li>
+							<li>
+                                <b>views</b>: Think of this as a literal page - a complete rendered view. This consists of
+                                containers and components alike, just like containers and components there should not be any
+                                business logic (only render logic) in a view.
+                            </li>
 						</ul>
 						</p>
 					</section>
 				</section>
+
+                <!--Things I wish I knew before starting with react.js-->
+                <section>
+                    <!--Things I wish I knew before starting with react.js: Title-->
+                    <section>
+                        <h2>Things I wish I knew before starting with react.js</h2>
+                    </section>
+
+                </section>
 			</div>
 		</div>
 
