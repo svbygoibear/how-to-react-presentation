@@ -6,3 +6,5 @@ these are all the things that I have found so far that has helped me.
 ## Why u no example?
 
 ## Contents
+
+Based off of [reveal.js](https://github.com/hakimel/reveal.js)
